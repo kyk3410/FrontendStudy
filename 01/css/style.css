@@ -1,0 +1,22 @@
+.box {
+  width: 200px; height: 200px; background-color: yellowgreen;
+
+  transform: translate(100px, 50px);
+  transform: translate(100%,100%);
+
+transform: rotate(45deg);
+transform: skewY(20deg);
+
+transform: none;
+}
+
+.box{
+  transition-property: border-radius,background-color;
+
+  transition-duration: 2s, 5s;
+  transition-timing-function: ease,linear;
+  transition-delay: 0s,2s;
+  transition: all 2s ease 2s;
+}
+
+.box:hover{background-color: cornflowerblue; border-radius: 50%;}
